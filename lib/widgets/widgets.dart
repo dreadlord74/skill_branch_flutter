@@ -1,3 +1,3 @@
 export 'photo.dart';
-export 'userAvatar.dart';
+export 'user_avatar.dart';
 export 'like_button.dart';
