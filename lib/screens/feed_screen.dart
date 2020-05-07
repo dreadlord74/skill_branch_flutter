@@ -3,7 +3,7 @@ import 'package:FlutterGalleryApp/widgets/like_button.dart';
 import 'package:FlutterGalleryApp/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 
-const String kPhotoLink = "https://flutter.dev/assets/404/dash_nest-c64796b59b65042a2b40fae5764c13b7477a592db79eaf04c86298dcb75b78ea.png";
+const String kFlutterDash = "https://flutter.dev/assets/404/dash_nest-c64796b59b65042a2b40fae5764c13b7477a592db79eaf04c86298dcb75b78ea.png";
 
 class Feed extends StatefulWidget {
   Feed({Key key}) : super(key: key);
@@ -37,12 +37,12 @@ class _FeedState extends State<Feed> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: <Widget>[
-        Photo(photoLink: kPhotoLink),
+        Photo(photoLink: kFlutterDash),
         _buildPhotoMeta(),
         Padding(
           padding: const EdgeInsets.all(10.0),
           child: Text(
-            "This is Flutter dash. I love him :)",
+            "Beautiful girl in a yellow dress with a flower on her head in the summer in the forest",
             maxLines: 3,
             overflow: TextOverflow.ellipsis,
             style: AppStyles.h3.copyWith(color: AppColors.manatee),
@@ -62,6 +62,7 @@ class _FeedState extends State<Feed> {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
           Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: <Widget>[
               UserAvatar(
                 avatarLink: "https://yt3.ggpht.com/a/AATXAJz27iTj3TgFPlucLd6iqiUgjcOJ3FJ_WQg1kQ=s48-c-k-c0xffffffff-no-rj-mo"
@@ -72,17 +73,17 @@ class _FeedState extends State<Feed> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
                   Text(
-                    "Kirill Adschenko", style: AppStyles.h2Black,
+                    "Dianne Miles", style: AppStyles.h2Black,
                   ),
                   Text(
-                    "@kaparray",
+                    "@Dianne Miles",
                     style: AppStyles.h4,
                   )
                 ],
               ),
-              LikeButton(likeCount: 1232, isLiked: false)
             ],
-          )
+          ),
+          LikeButton(likeCount: 1232, isLiked: false)
         ],
       ),
     );
