@@ -24,13 +24,15 @@ class FullScreenImage extends StatefulWidget {
   final String userName;
   final String name;
   final int heroTag;
+  final String photo;
 
   const FullScreenImage({
     Key key,
     this.heroTag,
     this.altDescription = "Beautiful girl in a yellow dress with a flower on her head in the summer in the forest",
     this.userName = "Dianne Miles",
-    this.name = "Dianne Miles"
+    this.name = "Dianne Miles",
+    this.photo = "https://flutter.dev/assets/404/dash_nest-c64796b59b65042a2b40fae5764c13b7477a592db79eaf04c86298dcb75b78ea.png"
   }) : super(key: key);
 
 
@@ -113,7 +115,7 @@ class _FullScreenImageState extends State<FullScreenImage> with SingleTickerProv
             Hero(
               tag: widget.heroTag,
               child: Photo(
-                photoLink: "https://flutter.dev/assets/404/dash_nest-c64796b59b65042a2b40fae5764c13b7477a592db79eaf04c86298dcb75b78ea.png",
+                photoLink: widget.photo,
               ),
             ),
             SizedBox(height: 16),
@@ -157,7 +159,7 @@ class _FullScreenImageState extends State<FullScreenImage> with SingleTickerProv
                 );
               },
             ),
-            SizedBox(height: 17,),
+            SizedBox(height: 17),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
