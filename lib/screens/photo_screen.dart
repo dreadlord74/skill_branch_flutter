@@ -134,7 +134,7 @@ class _FullScreenImageState extends State<FullScreenImage> with SingleTickerProv
                     Opacity(
                       opacity: avatarAnimation.value,
                       child: UserAvatar(
-                        avatarLink: widget.userPhoto
+                        avatarLink: widget.userPhoto,
                       ),
                     ),
                     SizedBox(width: 10),

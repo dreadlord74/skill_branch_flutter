@@ -37,7 +37,7 @@ class _FeedState extends State<Feed>{
   Widget _buildItem(int index){
     return GestureDetector(
       onTap: (){
-        Navigator.push(context, MaterialPageRoute(builder: (context) => FullScreenImage(heroTag: index)));
+        Navigator.push(context, MaterialPageRoute(builder: (context) => FullScreenImage(heroTag: index.toString())));
       },
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
