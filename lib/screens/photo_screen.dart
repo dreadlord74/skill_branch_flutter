@@ -25,6 +25,7 @@ class FullScreenImage extends StatefulWidget {
   final String name;
   final int heroTag;
   final String photo;
+  final String userPhoto;
 
   const FullScreenImage({
     Key key,
@@ -32,7 +33,8 @@ class FullScreenImage extends StatefulWidget {
     this.altDescription = "Beautiful girl in a yellow dress with a flower on her head in the summer in the forest",
     this.userName = "Dianne Miles",
     this.name = "Dianne Miles",
-    this.photo = "https://flutter.dev/assets/404/dash_nest-c64796b59b65042a2b40fae5764c13b7477a592db79eaf04c86298dcb75b78ea.png"
+    this.photo = "https://flutter.dev/assets/404/dash_nest-c64796b59b65042a2b40fae5764c13b7477a592db79eaf04c86298dcb75b78ea.png",
+    this.userPhoto = "https://yt3.ggpht.com/a/AATXAJz27iTj3TgFPlucLd6iqiUgjcOJ3FJ_WQg1kQ=s48-c-k-c0xffffffff-no-rj-mo"
   }) : super(key: key);
 
 
@@ -132,7 +134,7 @@ class _FullScreenImageState extends State<FullScreenImage> with SingleTickerProv
                     Opacity(
                       opacity: avatarAnimation.value,
                       child: UserAvatar(
-                        avatarLink: "https://yt3.ggpht.com/a/AATXAJz27iTj3TgFPlucLd6iqiUgjcOJ3FJ_WQg1kQ=s48-c-k-c0xffffffff-no-rj-mo"
+                        avatarLink: userPhoto
                       ),
                     ),
                     SizedBox(width: 10),
