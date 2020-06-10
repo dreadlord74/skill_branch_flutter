@@ -23,7 +23,7 @@ class FullScreenImage extends StatefulWidget {
   final String altDescription;
   final String userName;
   final String name;
-  final int heroTag;
+  final String heroTag;
   final String photo;
   final String userPhoto;
 
@@ -134,7 +134,7 @@ class _FullScreenImageState extends State<FullScreenImage> with SingleTickerProv
                     Opacity(
                       opacity: avatarAnimation.value,
                       child: UserAvatar(
-                        avatarLink: userPhoto
+                        avatarLink: widget.userPhoto
                       ),
                     ),
                     SizedBox(width: 10),
