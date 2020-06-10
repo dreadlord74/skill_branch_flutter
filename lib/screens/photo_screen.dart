@@ -82,9 +82,9 @@ class _FullScreenImageState extends State<FullScreenImage> with SingleTickerProv
 
   @override
   void dispose() {
+    animationController.dispose();
     super.dispose();
 
-    animationController.dispose();
   }
 
   @override
